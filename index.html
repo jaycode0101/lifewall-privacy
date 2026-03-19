@@ -1,21 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LifeWall – Privacy Policy</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0d0d0d; --card: #161616; --border: #2a2a2a;
+      --text: #d4d4d4; --muted: #777; --accent: #6366f1; --white: #f0f0f0;
+    }
+    body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; font-weight: 300; line-height: 1.8; font-size: 16px; }
+    header { padding: 72px 24px 56px; text-align: center; border-bottom: 1px solid var(--border); background: linear-gradient(160deg, #13131f 0%, #0d0d0d 100%); }
+    .badge { display: inline-block; background: #6366f122; border: 1px solid #6366f144; color: var(--accent); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; padding: 5px 16px; border-radius: 50px; margin-bottom: 24px; }
+    h1 { font-family: 'DM Serif Display', serif; font-size: clamp(2rem, 5vw, 3rem); color: var(--white); margin-bottom: 12px; }
+    .sub { font-size: 13px; color: var(--muted); }
+    .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+    .meta { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; padding: 18px 0; border-bottom: 1px solid var(--border); font-size: 13px; color: var(--muted); }
+    .body { padding: 52px 0 80px; display: flex; flex-direction: column; gap: 44px; }
+    section { opacity: 0; animation: up .5s ease forwards; }
+    section:nth-child(1){animation-delay:.05s} section:nth-child(2){animation-delay:.1s}
+    section:nth-child(3){animation-delay:.15s} section:nth-child(4){animation-delay:.2s}
+    section:nth-child(5){animation-delay:.25s} section:nth-child(6){animation-delay:.3s}
+    section:nth-child(7){animation-delay:.35s} section:nth-child(8){animation-delay:.4s}
+    section:nth-child(9){animation-delay:.45s} section:nth-child(10){animation-delay:.5s}
+    @keyframes up { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:none} }
+    h2 { font-family: 'DM Serif Display', serif; font-size: 1.25rem; color: var(--white); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+    h2 span { background: var(--accent); color: #fff; font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 500; padding: 3px 9px; border-radius: 5px; letter-spacing: .05em; }
+    p { color: var(--text); margin-bottom: 10px; }
+    ul { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
+    li { display: flex; gap: 10px; align-items: flex-start; }
+    li::before { content: '→'; color: var(--accent); flex-shrink: 0; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 18px 20px; margin-top: 12px; }
+    .card p { margin: 0; font-size: 15px; }
+    .perm { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; }
+    .perm-name { font-size: 11px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+    .perm p { font-size: 14px; margin: 0; }
+    .perm-grid { display: grid; gap: 10px; margin-top: 12px; }
+    footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); font-size: 13px; color: var(--muted); }
+    a { color: var(--accent); }
+  </style>
 </head>
 <body>
+<header>
+  <div class="container">
+    <div class="badge">Legal</div>
     <h1>Privacy Policy</h1>
-    <p>Effective date: 2026-03-19</p>
-    <p>Your privacy is important to us. This privacy policy explains how we collect, use, and disclose your information.</p>
-    <h2>Information we collect</h2>
-    <p>We may collect personal information that you provide directly to us, such as when you create an account, fill out a form, or communicate with us.</p>
-    <h2>How we use your information</h2>
-    <p>We use the information we collect for various purposes, including to provide, maintain, and improve our services.</p>
-    <h2>Changes to this Privacy Policy</h2>
-    <p>We may update our privacy policy from time to time. We will notify you of any changes by posting the new privacy policy on this page.</p>
-    <h2>Contact Us</h2>
-    <p>If you have any questions about this privacy policy, please contact us.</p>
+    <p class="sub">LifeWall &middot; Event Horizon</p>
+  </div>
+</header>
+
+<div class="container">
+  <div class="meta">
+    <span>Effective Date: <strong style="color:var(--white)">July 1, 2025</strong></span>
+    <span>Contact: <a href="mailto:support.eventhorizon@gmail.com">support.eventhorizon@gmail.com</a></span>
+  </div>
+
+  <div class="body">
+
+    <section>
+      <h2><span>Intro</span> About This Policy</h2>
+      <p>This Privacy Policy describes how <strong style="color:var(--white)">Event Horizon</strong> ("we", "our", or "us") handles your information in the <strong style="color:var(--white)">LifeWall</strong> Android application.</p>
+      <div class="card"><p>LifeWall is built with privacy at its core. <strong style="color:var(--white)">All your personal data stays entirely on your device.</strong> We do not operate servers, databases, or cloud storage for user data.</p></div>
+    </section>
+
+    <section>
+      <h2><span>01</span> Information You Provide</h2>
+      <p>The App stores the following locally to function:</p>
+      <ul>
+        <li>Your <strong style="color:var(--white)">Date of Birth</strong> — to calculate your life progress grid.</li>
+        <li>Your <strong style="color:var(--white)">Expected Lifespan</strong> — to render the weeks calendar.</li>
+        <li><strong style="color:var(--white)">Tasks and Schedule entries</strong> — your daily to-dos and timed events.</li>
+        <li><strong style="color:var(--white)">App preferences</strong> — theme, font, update time, and toggle settings.</li>
+      </ul>
+      <div class="card"><p>All data is stored exclusively in your device's local <strong style="color:var(--white)">SharedPreferences</strong> and local file system. It is never transmitted off your device.</p></div>
+    </section>
+
+    <section>
+      <h2><span>02</span> Biometric Authentication</h2>
+      <p>LifeWall offers an optional App Lock using your device's fingerprint or face recognition.</p>
+      <ul>
+        <li>We do <strong style="color:var(--white)">not</strong> collect, store, or transmit any biometric data.</li>
+        <li>Authentication is handled entirely by <strong style="color:var(--white)">Android's secure OS biometric APIs</strong>.</li>
+        <li>We never have access to your biometric information.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span>03</span> Background Services</h2>
+      <p>LifeWall runs background services for its core features:</p>
+      <ul>
+        <li>A <strong style="color:var(--white)">Foreground Service</strong> generates and sets your wallpaper daily.</li>
+        <li><strong style="color:var(--white)">AlarmManager</strong> schedules precise daily updates and task reminders.</li>
+        <li>A <strong style="color:var(--white)">Boot Receiver</strong> restarts services when your device reboots.</li>
+        <li><strong style="color:var(--white)">Full-screen reminders</strong> appear on your lock screen for scheduled tasks.</li>
+      </ul>
+      <p>All services operate locally and send no data externally.</p>
+    </section>
+
+    <section>
+      <h2><span>04</span> Android Permissions</h2>
+      <div class="perm-grid">
+        <div class="perm"><div class="perm-name">SET_WALLPAPER</div><p>Sets your home/lock screen to the generated life calendar wallpaper.</p></div>
+        <div class="perm"><div class="perm-name">SCHEDULE_EXACT_ALARM</div><p>Triggers wallpaper updates at midnight and fires task reminders at your exact chosen time.</p></div>
+        <div class="perm"><div class="perm-name">USE_FULL_SCREEN_INTENT</div><p>Shows immersive lock-screen popup reminders for scheduled tasks when the screen is off.</p></div>
+        <div class="perm"><div class="perm-name">USE_BIOMETRIC / USE_FINGERPRINT</div><p>Powers the optional App Lock via your device's secure OS authentication.</p></div>
+        <div class="perm"><div class="perm-name">FOREGROUND_SERVICE</div><p>Keeps the wallpaper update service running reliably in the background.</p></div>
+        <div class="perm"><div class="perm-name">RECEIVE_BOOT_COMPLETED</div><p>Restarts alarms and services automatically after device reboot.</p></div>
+        <div class="perm"><div class="perm-name">POST_NOTIFICATIONS</div><p>Sends system notifications for wallpaper updates and task reminders (Android 13+).</p></div>
+        <div class="perm"><div class="perm-name">READ_MEDIA_IMAGES</div><p>Allows selecting a custom background image from your gallery.</p></div>
+        <div class="perm"><div class="perm-name">INTERNET</div><p>Used solely to download Google Fonts and communicate with Google Play for purchase validation.</p></div>
+        <div class="perm"><div class="perm-name">WAKE_LOCK</div><p>Wakes the screen when a scheduled alarm fires to display your reminder.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2><span>05</span> Internet & Third-Party Services</h2>
+      <p>The App accesses the internet only for:</p>
+      <ul>
+        <li><strong style="color:var(--white)">Google Fonts</strong> — downloading font files for display.</li>
+        <li><strong style="color:var(--white)">Google Play Billing</strong> — validating the one-time premium purchase.</li>
+      </ul>
+      <div class="card"><p>We do <strong style="color:var(--white)">not</strong> use analytics, advertising SDKs, Firebase, crash reporters, or any other data services. No user data is ever sent to our servers.</p></div>
+    </section>
+
+    <section>
+      <h2><span>06</span> In-App Purchases</h2>
+      <p>LifeWall offers an optional one-time premium upgrade that unlocks additional themes and fonts. All payment processing is handled securely by <strong style="color:var(--white)">Google Play Billing</strong>. Event Horizon never receives or processes your payment details directly.</p>
+    </section>
+
+    <section>
+      <h2><span>07</span> Children's Privacy</h2>
+      <p>LifeWall is rated <strong style="color:var(--white)">Everyone (3+)</strong> and does not knowingly collect personal information from children. The app contains no advertising, social features, or external communication.</p>
+    </section>
+
+    <section>
+      <h2><span>08</span> Deleting Your Data</h2>
+      <p>Since all data is local, you can delete it anytime by:</p>
+      <ul>
+        <li>Going to <strong style="color:var(--white)">Settings → Apps → LifeWall → Clear Data</strong> on your device.</li>
+        <li>Uninstalling the app, which removes all stored data permanently.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span>09</span> Policy Updates</h2>
+      <p>We may update this Privacy Policy occasionally. Changes will be reflected on this page with a revised effective date. Continued use of the App after changes constitutes acceptance.</p>
+    </section>
+
+    <section>
+      <h2><span>10</span> Contact Us</h2>
+      <div class="card">
+        <p><strong style="color:var(--white)">Event Horizon</strong><br/>
+        Email: <a href="mailto:support.eventhorizon@gmail.com">support.eventhorizon@gmail.com</a></p>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Event Horizon. All rights reserved. &middot; LifeWall</p>
+</footer>
 </body>
 </html>
