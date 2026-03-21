@@ -89,14 +89,14 @@
 
     <section>
       <h2><span>03</span> Background Services</h2>
-      <p>LifeWall runs background services for its core features:</p>
+      <p>LifeWall runs background processes for its core features:</p>
       <ul>
-        <li>A <strong style="color:var(--white)">Foreground Service</strong> generates and sets your wallpaper daily.</li>
-        <li><strong style="color:var(--white)">AlarmManager</strong> schedules precise daily updates and task reminders.</li>
-        <li>A <strong style="color:var(--white)">Boot Receiver</strong> restarts services when your device reboots.</li>
+        <li><strong style="color:var(--white)">AlarmManager</strong> schedules precise daily wallpaper updates and task reminders.</li>
+        <li>A <strong style="color:var(--white)">BroadcastReceiver</strong> generates and sets your wallpaper at the scheduled time.</li>
+        <li>A <strong style="color:var(--white)">Boot Receiver</strong> reschedules alarms when your device reboots.</li>
         <li><strong style="color:var(--white)">Full-screen reminders</strong> appear on your lock screen for scheduled tasks.</li>
       </ul>
-      <p>All services operate locally and send no data externally.</p>
+      <p>All processes operate locally and send no data externally.</p>
     </section>
 
     <section>
@@ -106,8 +106,7 @@
         <div class="perm"><div class="perm-name">SCHEDULE_EXACT_ALARM</div><p>Triggers wallpaper updates at midnight and fires task reminders at your exact chosen time.</p></div>
         <div class="perm"><div class="perm-name">USE_FULL_SCREEN_INTENT</div><p>Shows immersive lock-screen popup reminders for scheduled tasks when the screen is off.</p></div>
         <div class="perm"><div class="perm-name">USE_BIOMETRIC / USE_FINGERPRINT</div><p>Powers the optional App Lock via your device's secure OS authentication.</p></div>
-        <div class="perm"><div class="perm-name">FOREGROUND_SERVICE</div><p>Keeps the wallpaper update service running reliably in the background.</p></div>
-        <div class="perm"><div class="perm-name">RECEIVE_BOOT_COMPLETED</div><p>Restarts alarms and services automatically after device reboot.</p></div>
+        <div class="perm"><div class="perm-name">RECEIVE_BOOT_COMPLETED</div><p>Restarts alarms automatically after device reboot.</p></div>
         <div class="perm"><div class="perm-name">POST_NOTIFICATIONS</div><p>Sends system notifications for wallpaper updates and task reminders (Android 13+).</p></div>
         <div class="perm"><div class="perm-name">READ_MEDIA_IMAGES</div><p>Allows selecting a custom background image from your gallery.</p></div>
         <div class="perm"><div class="perm-name">INTERNET</div><p>Used solely to download Google Fonts and communicate with Google Play for purchase validation.</p></div>
